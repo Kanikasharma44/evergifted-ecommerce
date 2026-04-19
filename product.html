@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Memory Frame | Ever Gifted</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-detail {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .product-gallery {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 20px;
+        }
+
+        .product-info-detail {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-info-detail h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: var(--color-light-brown);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .customization-section {
+            background-color: var(--color-beige);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            margin-bottom: 30px;
+        }
+
+        .customization-section h3 {
+            font-family: var(--font-body);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input[type="text"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--color-light-brown);
+            box-shadow: 0 0 5px rgba(196, 164, 132, 0.3);
+        }
+
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-whatsapp-order {
+            background-color: #25d366;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        }
+
+        .btn-whatsapp-order:hover {
+            background-color: #1ebc5a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img
+            src="images/logo-removebg-preview.png"
+            alt="Ever Gifted Logo"
+            style="height: 80px; max-width: 100%; margin-left: 10px"
+          />
+        </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <button class="hamburger">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="container product-detail">
+        <div class="product-gallery">
+            <img src="images/product_frame_1774772507247.png" alt="Rustic Memory Frame" class="main-image">
+        </div>
+        
+        <div class="product-info-detail">
+            <h1>Rustic Memory Frame</h1>
+            <div class="price">$24.00</div>
+            <p class="description">Capture your precious moments in our beautiful handcrafted natural wood frame. Delicately sanded and polished to perfection, this frame brings a warm, rustic charm and preserves memories forever.</p>
+            
+            <div class="customization-section">
+                <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Customize Your Gift</h3>
+                
+                <div class="form-group">
+                    <label>Select Theme Color</label>
+                    <select id="theme">
+                        <option value="pastel">Soft Pastel</option>
+                        <option value="vintage">Vintage Sepia</option>
+                        <option value="monochrome">Classic Black & White</option>
+                        <option value="vibrant">Bright & Vibrant</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Add a Personal Message (Optional)</label>
+                    <textarea id="message" rows="3" placeholder="e.g. 'Happy Anniversary, Love you always.'"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Photo</label>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn btn-secondary"><i class="fa-solid fa-upload"></i> Choose File</button>
+                        <input type="file" id="photo-upload" name="photo" accept="image/*" />
+                    </div>
+                    <span id="file-name" style="font-size: 0.9rem; color: #666;">No file selected</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <!-- Using placeholder phone number in link -->
+                <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20ordering%20the%20Rustic%20Memory%20Frame." class="btn btn-whatsapp-order btn" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+                </a>
+                <a href="#" class="btn btn-primary" onclick="alert('Added to Cart!')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #777;">
+                <i class="fa-solid fa-check"></i> Cash on Delivery available<br>
+                <i class="fa-solid fa-check"></i> Dispatches in 2-3 business days
+            </p>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <section class="section-padding" style="background-color: var(--color-white);">
+        <div class="container">
+            <h2 class="section-title" style="font-size: 2.5rem;">You May Also Love</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product_polaroid_1774772523314.png" alt="Aesthetic Polaroid Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vintage Polaroid Pack</h3>
+                        <p class="product-price">$15.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product_custom_1774772571206.png" alt="Custom Box">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bespoke Custom Box</h3>
+                        <p class="product-price">$45.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2026 Ever Gifted. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Order via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

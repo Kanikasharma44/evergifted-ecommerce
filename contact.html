@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Ever Gifted</title>
+    <meta
+      name="description"
+      content="Get in touch with Ever Gifted for inquiries or custom orders."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .contact-hero {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: pink;
+      }
+
+      .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 40px;
+      }
+
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .contact-form {
+        flex: 1.5;
+        min-width: 300px;
+        background-color: var(--color-white);
+        padding: 40px;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-hover);
+        border-top: 5px solid var(--color-light-brown);
+      }
+
+      .contact-card {
+        background-color: var(--color-white);
+        padding: 30px;
+        border-radius: var(--radius-md);
+        margin-bottom: 20px;
+        box-shadow: var(--shadow-soft);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        transition: var(--transition);
+      }
+
+      .contact-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .contact-card i {
+        font-size: 2.5rem;
+        color: var(--color-blush-pink);
+      }
+
+      .contact-card h4 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      .contact-card p,
+      .contact-card a {
+        color: #555;
+        font-size: 1.1rem;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: var(--radius-sm);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        background-color: #fafafa;
+        transition: var(--transition);
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--color-light-brown);
+        background-color: var(--color-white);
+        box-shadow: 0 0 5px rgba(196, 164, 132, 0.2);
+      }
+
+      .submit-btn {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo"
+          ><img
+            src="images/logo-removebg-preview.png"
+            alt="Ever Gifted Logo"
+            style="height: 80px; max-width: 100%; margin-left: 10px"
+        /></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="hamburger">&#9776;</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Header -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1 style="font-size: 3.5rem">Say Hello</h1>
+        <p style="font-size: 1.2rem">
+          We'd love to hear from you. Let's create something beautiful together.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Layout -->
+    <section class="section-padding" style="background-color: beige">
+      <div class="container contact-wrapper">
+        <!-- Left Side Info -->
+        <div class="contact-info">
+          <h2
+            style="
+              font-size: 2.2rem;
+              margin-bottom: 30px;
+              color: var(--color-light-brown);
+            "
+          >
+            Get In Touch
+          </h2>
+
+          <a
+            href="https://wa.me/qr/OILCJ2M3P3ICP1"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="contact-card">
+              <i class="fa-brands fa-whatsapp" style="color: #25d366"></i>
+              <div>
+                <h4>WhatsApp Us</h4>
+                <p>For instant replies & orders</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/evergifted_store/"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="contact-card">
+              <i class="fa-brands fa-instagram" style="color: #e1306c"></i>
+              <div>
+                <h4>Instagram</h4>
+                <p>@evergifted_store</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="mailto:evergifted25@gmail.com"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="contact-card">
+              <i class="fa-regular fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>evergifted25@gmail.com</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="contact-form">
+          <h3 style="font-size: 1.8rem; margin-bottom: 25px">Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Let's get introduced"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Where can we reply?"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject / Product Inquiry</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="What are you thinking of?"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Share your emotional idea with us..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message
+              <i class="fa-solid fa-paper-plane" style="margin-left: 8px"></i>
+            </button>
+          </form>
+          <div
+            id="formStatus"
+            style="
+              display: none;
+              margin-top: 20px;
+              font-weight: bold;
+              padding: 15px;
+              border-radius: 8px;
+              text-align: center;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0">
+          <p>&copy; 2026 EverGifted. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/qr/OILCJ2M3P3ICP1"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Order via WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

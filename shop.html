@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Ever Gifted</title>
+    <meta
+      name="description"
+      content="Shop handmade gifts, polaroid prints, scrapbooks, and custom frames."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .shop-header {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: pink;
+      }
+
+      .category-filter {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        background: none;
+        border: 2px solid var(--color-light-brown);
+        color: var(--color-dark-brown);
+        padding: 8px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: var(--font-body);
+        transition: var(--transition);
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active {
+        background-color: var(--color-light-brown);
+        color: var(--color-white);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo"
+          ><img
+            src="images/logo-removebg-preview.png"
+            alt="Ever Gifted Logo"
+            style="height: 80px; max-width: 100%; margin-left: 10px"
+          />
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="contact.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="hamburger">&#9776;</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+      <div class="container">
+        <h1 style="font-size: 3.5rem">Our Collection</h1>
+        <p>Handmade customized gifts created especially for you.</p>
+      </div>
+    </section>
+
+    <!-- Shop Products -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- Categories -->
+        <div class="category-filter">
+          <button class="filter-btn active">All Gifts</button>
+          <button class="filter-btn">Handmade Frames</button>
+          <button class="filter-btn">Polaroids</button>
+          <button class="filter-btn">Scrapbooks</button>
+          <button class="filter-btn">Custom Gifts</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/boximage.png" alt="BIRTHDAY INDULGENCE" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Birthday Indulgence</h3>
+              <p class="product-price">Rs.899</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/jarimg.png" alt="52 shade of love" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">52 Shade of love</h3>
+              <p class="product-price">Rs.799</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/imagehamper.png" alt="Grand love gift hamper" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Grand love gift hamper</h3>
+              <p class="product-price">Rs.1,000</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/popup.png" alt="Popup Surprise Box" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Popup Surprise Box</h3>
+              <p class="product-price">Rs.499.00</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 5 (Reusing frame) -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/poloriods.png" alt="Polaroid combo" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Polaroid combo</h3>
+              <p class="product-price">Rs.299</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 6 (Reusing polaroid) -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/customizedphoto.png" alt="Picture Frame" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">customized photo Frame</h3>
+              <p class="product-price">Rs.499</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+
+          <!-- Product 7 (Reusing scrapbook) -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/balloon.png" alt="Ballon Frame" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Ballons gift hamper</h3>
+              <p class="product-price">Rs.1500</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 8 (Reusing custom box) -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/image.png" alt="Box Frame" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                Customised Handmade Embroidery Art for Every Occasion
+              </h3>
+              <p class="product-price">Rs.1499</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!--9-->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img
+                src="images/personalized.png"
+                alt="Personalized Memory Scrapbook"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Personalized Memory Scrapbook</h3>
+              <p class="product-price">Rs.799</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 10 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/magzine.png" alt="magzine style photo album" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Magzine Style Photo Album</h3>
+              <p class="product-price">Rs.799</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 11 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/photoframe.png" alt="photoframe" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">customized frame</h3>
+              <p class="product-price">Rs.399</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+          <!-- Product 12 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img
+                src="images/emboridery.png"
+                alt="emboridery art for every occasion"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">emboridery art for every occasion</h3>
+              <p class="product-price">Rs.899</p>
+              <a href="product.html" class="btn btn-secondary">Customize Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2>EverGifted</h2>
+            <p>
+              Handmade gifts that hold memories forever. Giving joy wrapped in
+              aesthetic pastel elegance.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="shop.html">Shop Collection</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="shop.html">Handmade Frames</a></li>
+              <li><a href="shop.html">Polaroid Prints</a></li>
+              <li><a href="shop.html">Memory Scrapbooks</a></li>
+              <li><a href="shop.html">Custom Gift Boxes</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Connect</h4>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/evergifted_store/"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/qr/OILCJ2M3P3ICP1"
+                  ><i class="fa-brands fa-whatsapp"></i> WhatsApp Order</a
+                >
+              </li>
+              <li>
+                <a href="mailto:evergifted25@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i> Email Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 EverGifted. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href=" https://wa.me/qr/OILCJ2M3P3ICP1"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Order via WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
